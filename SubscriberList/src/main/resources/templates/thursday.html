@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--<meta name="description" content="">-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="../../favicon.ico"/>
+<!-- Navbar Title Template for Bootstrap -->
+<title>Here lies the Thursday Homework for Wk12Day4 </title>
+<!-- Bootstrap core CSS -->
+<link href=".resources/static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+h1 {
+  font-family: 'Segoe Print';
+}
+    </style>
+<title>Thursday</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Thursday's Monday</title>
+<!--    <div class="jumbotron jumbotron-fluid">-->
+<!--        <div class="container">-->
+
+<!--            <h1 class="display-4">Fluid jumbotron</h1>-->
+<!--            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+</head>
+<body>
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" th:text="${username}">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/#">Home</a></li>
+                    <li><a href="https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#css-inlining">Inline CSS is Poo in Thyme</a></li>
+                    <li><a href="https://getbootstrap.com/docs/4.3/components/card/">Bootstrap is meh</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Funny Stuff 2/About Me<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">More Cat Vids</li>
+                            <li><a href="https://www.youtube.com/watch?v=TDvALbqUhlY">One</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=z3U0udLH974">Two</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=GHeHt6UEoto">Bleep! Good lord how many do you need!</a></li>
+                            <li><a href="https://www.teepublic.com/poster-and-art/3714085-cat-pile">Cat Pile Tees!</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">About Me</li>
+                            <li><a href="https://www.facebook.com/photo.php?fbid=10155044702007231&set=pb.572607230.-2207520000..&type=3">Separated link</a></li>
+                            <li><a href="https://www.facebook.com/sarah.e.hoffman.58/">Lonely Separated Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+</div>
+<div class="container">
+    <h2>Search Subscriber</h2>
+    <form action="#" th:action="@{/search}" th:object="${subscriber}" method="Get">
+        <p>Please use the form below to search for a subscriber:</p>
+
+        <table>
+
+
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" th:field="*{firstName}" /></td>
+            </tr>
+
+
+            <td><button type="submit">Submit</button></td>
+        </table>
+    </form>
+    <h4>Subscriber:</h4>
+    <p th:text="${firstName}"></p>
+    <p th:text="${lastName}"></p>
+    <p th:text="${userName}"></p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../static/js/bootstrap.js" th:href="@{/js/bootstrap.js}"></script>
+</body>
+</html>

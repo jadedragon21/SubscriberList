@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta name="description" content="">
+
+    <link rel="icon" href="../../favicon.ico"/>
+    <!-- Navbar Title Template for Bootstrap -->
+    <title>Here lies the Friday Homework for Wk12Day5 </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href=".resources/static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+h1 {
+  font-family: 'Segoe Print';
+}
+    </style>
+    <title>Search</title>
+
+</head>
+<body>
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" th:text="${username}">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/#">Home</a></li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+</div>
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        <h2>Search Subscriber</h2>
+
+        <form action="#" th:action="@{/search}" th:object="${subscriber}" method="Get">
+            <p>Please use the form below to search for a subscriber:</p>
+
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" th:field="*{firstName}" /></td>
+                </tr>
+
+
+                <td><button class="btn btn-primary" type="submit">Submit</button></td>
+            </table>
+        </form>
+        <div class="card" style="width: 18rem;">
+            <img src="../static/images/Sheep.png" class="card-img-top" length = "150" width="150" th:src="@{images/Sheep.png}"/>
+            <div class="card-body">
+        <h4>Subscriber:</h4>
+        <p th:text="${firstName}"></p>
+        <p th:text="${lastName}"></p>
+        <p th:text="${userName}"></p>
+        <p class="card-text" th:field="*{firstName}"> is a user who knows their stuff.</p>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../static/js/bootstrap.js" th:href="@{/js/bootstrap.js}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>

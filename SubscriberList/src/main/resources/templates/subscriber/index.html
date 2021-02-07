@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta http-equiv="Content-Type" content="text/html;/>-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <link rel="icon" href="../../favicon.ico"/>
+    <title>Navbar Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href=".resources/static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <style> h1 {font-family: 'Brush Script MT', cursive;}</style>
+
+    <title>Subscriber List</title>
+<!--    <link rel="stylesheet" type= "text/css" href="/css/custom.css">-->
+</head>
+<body>
+<!--<link rel="stylesheet" href="/css/custom.css">-->
+<!--<form action="#" th:action="@{/}" th:object="${subscriber}" method="post">-->
+<!--    <table>-->
+
+<!--        <tr>-->
+<!--            <td>First Name:</td>-->
+<!--            <td><input type="text" th:field="*{firstName}" /></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Last Name:</td>-->
+<!--            <td><input type="text" th:field="*{lastName}" /></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Username:</td>-->
+<!--            <td><input type="text" th:field="*{userName}" /></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><button type="submit">Submit Your Name</button></td>-->
+<!--        </tr>-->
+
+<!--    </table>-->
+<!--</form>-->
+
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" th:text="${username}">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active"><a href="/resume.html">Resume</a></li>
+                    <li class="active"><a href="/thursday.html">Thursday</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"> Funny Stuff <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.youtube.com/channel/UCchBatdUMZoMfJ3rIzgV84g">Viva La Dirt League</a></li>
+                            <li><a href="/resume.html">Resume</a></li>
+                            <li><a href="/thursday.html">Thursday</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">You Shall Not Laugh</li>
+                            <li><a href="https://www.youtube.com/watch?v=Y7rXlbHtcqM">Wisdom</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=arj7oStGLkU">Instant Gratification Monkey</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=rk3-Av1KblM">Funny Meme Video</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="jumbotron" style="background-color:#00F3FF" >
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>
+        <!--Usage of models we wrote in WepAppController th:text="'Welcome to basic Bootstrap with Spring Boot created by ' + ${username} -->
+        <h1>Fun Awaits! You......Got.....This....</h1>
+        <h3 th:text="'Welcome to Our Awesome Site! ' + ${username} "></h3>
+
+        <p th:text="'This is an example of a date---->  ' + ${#dates.format(datetime, 'dd MMM yyyy HH:mm')}"></p>
+            <ul>JUST SOME IDEAS FOR FUTURE USE DOWN BELOW!</ul>
+            <ul>Add a novel here or add a resume info here.</ul>
+            <ul>Add linked in and other buttons here </ul>
+            <ul>Added pics and links and a search function and make it pretty in the css files </ul>
+            <ul>Added Bootstrap and Thyme in places and inlines as well. </ul>
+            <ul>Got the drop menu to work and added links. Enjoy the videos and links.</ul>
+            <p><a href="https://www.youtube.com/watch?v=1vvyyhteIv4" class="w3-bar-item w3-button">Relaxing Music</a></p>
+        <p> This is my exercise to illustrate how I used bootstrap to make a static navbar and fixed-to-top navbar work.
+            It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>
+            Welcome to the sheep's annoying race. Hope you enjoy yourself in this nonsensical play land.
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>This is a picture &raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>This is a picture of &raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>This is a picture of a &raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>This is a picture of a  sheep.&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;&raquo;
+            <img src="../static/images/Sheep.png" length = "50" width="50" th:src="@{images/Sheep.png}"/>
+        </p>
+    </div>
+        <div class="container">
+            <form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+                <p>Please use the form below to sign up as a subscriber:</p>
+
+                <table>
+
+
+                    <tr>
+<!--                        <td>First Name:</td>-->
+<!--                        <td><input type="text" th:field="*{firstName}" /></td>-->
+                        <!--                        thyme leaf above and bootstrap below-->
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" th:field="*{firstName}" required>
+                            </div>
+                    </tr>
+                    <tr>
+<!--                        <td>Last Name:</td>-->
+<!--                        <td><input type="text" th:field="*{lastName}" /></td>-->
+                        <!--                        thyme leaf above and bootstrap below-->
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Last name</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" th:field="*{lastName}" required>
+                        </div>
+                    </tr>
+                    <tr>
+<!--                        <td>Create a Username:</td>-->
+<!--                        <td><input type="text" th:field="*{userName}" /></td>-->
+<!--                        thyme leaf above and bootstrap below-->
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefaultUsername">@Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2"></span>
+                                </div>
+                                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" th:field="*{userName}" aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+        </div>
+
+                    </tr>
+
+                    <td><button class="btn btn-primary" type="submit">Submit form</button></td>
+
+                </table>
+            </form>
+        </div>
+
+        </div> <!-- /container -->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../static/js/bootstrap.js" th:href="@{/js/bootstrap.js}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>
+
+
